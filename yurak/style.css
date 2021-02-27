@@ -1,0 +1,158 @@
+.box{
+    margin-top: 0px;
+    height: 400px;
+    background-image: url(../yurak/img.svg/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -300px;
+    position: relative;
+}
+.container{
+ 
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: rotate(45deg);
+    position: relative;
+    top: 280px;
+}
+.center{
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    animation-name: yurak;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+}
+.center::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: -50px;
+    border-radius: 50%;
+    animation-name: yurak;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+}
+.center::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+    animation-name: yurak;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+}
+@keyframes yurak{
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        width: 130px;
+        height: 130px;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+.man{
+    width: 190px;
+    height: 300px;
+    background-image: url(../yurak/img.svg/yigit.svg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    animation-name: action-man;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+   
+
+}
+.woman{
+    width: 200px;
+    height: 300px;
+    background-image: url(../yurak/img.svg/qiz.svg);
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    animation-name: action-woman;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+}
+.people{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes action-man{
+    0%{
+        background-position: 10px;
+    }
+    14%{
+        background-position: -180px;
+    }
+    28%{
+        background-position: -360px;
+    }
+    42%{
+        background-position: -520px;
+    }
+    56%{
+        background-position: -700px;
+    }
+    70%{
+        background-position: -890px;
+    }
+    84%{
+        background-position: -1080px;
+    }
+    100%{
+        background-position: -1270px;
+    }
+}
+@keyframes action-woman{
+    0%{
+        background-position: 10px 45px;
+    }
+    12.5%{
+        background-position: -190px 45px;
+    }
+    25%{
+        background-position: -390px 45px;
+    }
+    37.5%{
+        background-position: -590px 45px;
+    }
+    50%{
+        background-position: -790px 45px;
+    }
+    62.5%{
+        background-position: -990px 45px;
+    }
+    75%{
+        background-position: -1190px 45px;
+    }
+    87.5%{
+        background-position: -1390px 45px;
+    }
+    100%{
+        background-position: -1590px 45px;
+
+    }
+}
+
+
+
